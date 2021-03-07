@@ -31,7 +31,7 @@
             -moz-osx-font-smoothing: grayscale;
             /* Support for IE. */
             font-feature-settings: 'liga';
-            color:#0D9E15;
+            color: #0D9E15;
         }
         
         @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
@@ -299,9 +299,11 @@
         .popovertable td {
             border: 1px dashed blue;
         }
-        .contentBordered  {
+        
+        .contentBordered {
             max-width: 300px;
-min-width: 100px;;
+            min-width: 100px;
+            ;
             border: 5px solid blue;
             border-radius: 25px;
             margin-left: 25px;
@@ -863,46 +865,48 @@ min-width: 100px;;
             </div>
         </div>
 
-        <div><p></p></div>
+        <div>
+            <p></p>
+        </div>
         <div class="row row-cols-s-1 row-cols-sm-2 row-cols-2 row-cols-md-3 row-cols-lg-4">
 
-          
-                <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-                    <a data-toggle="modal" data-target="#dataoncomputer" data-highres="numbers.png" href="#">
-                        <img src=".\images\numbers.png" alt="unit1" style="width:100%">
-                    </a>
-                    <div class="container">
-                        <h4><b>Numbers!</b></h4>
-                        <p>... On A Computer ...</p>
-                    </div>
-                </section>
-            
-           
-                <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-                    <a data-toggle="modal" data-target="#datarep" data-highres="camman.png" href="#">
-                        <img src=".\images\camman.png" alt="digital data" style="width:100%">
-                    </a>
-                    <div class="container">
-                        <h4><b>Digital Data</b></h4>
-                        <p>..in an unreal world</p>
-                    </div>
-                </section>
-          
 
-                <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-                    <a data-toggle="modal" data-target="#datacompression" data-highres="compression.png" href="#">
-                        <img src=".\images\compression.png" alt="digital data" style="width:100%">
-                    </a>
-                    <div class="container">
-                        <h4><b>Compression</b></h4>
-                        <p>..if your head has space ..</p>
-                    </div>
-                </section>
-           
+            <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                <a data-toggle="modal" data-target="#dataoncomputer" data-highres="numbers.png" href="#">
+                    <img src=".\images\numbers.png" alt="unit1" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Numbers!</b></h4>
+                    <p>... On A Computer ...</p>
+                </div>
+            </section>
 
 
+            <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                <a data-toggle="modal" data-target="#datarep" data-highres="camman.png" href="#">
+                    <img src=".\images\camman.png" alt="digital data" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Digital Data</b></h4>
+                    <p>..in an unreal world</p>
+                </div>
+            </section>
 
-                <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+
+            <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                <a data-toggle="modal" data-target="#datacompression" data-highres="compression.png" href="#">
+                    <img src=".\images\compression.png" alt="digital data" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Compression</b></h4>
+                    <p>..if your head has space ..</p>
+                </div>
+            </section>
+
+
+
+
+            <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
                 <a data-toggle="modal" data-target="#copyright" data-highres="copyright.png" href="#">
                     <img src=".\images\copyright.png" alt="unit1" style="width:100%">
                 </a>
@@ -958,7 +962,7 @@ min-width: 100px;;
             </section>
 
             <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-                <a data-toggle="modal" data-target="#programming" data-highres="algorithms.png" href="#">
+                <a data-toggle="modal" data-target="#programmingalgorithms" data-highres="algorithms.png" href="#">
                     <img src=".\images\algorithms.png" alt="unit1" style="width:100%">
                 </a>
 
@@ -1050,8 +1054,7 @@ min-width: 100px;;
                             <td>
 
 
-                                <p>To convert a binary number to the equivalent decimal number, you use the base, 
-                                    which is 2, and multiply each digit by the base raised to the power of the digit's place position. Hover to see an example
+                                <p>To convert a binary number to the equivalent decimal number, you use the base, which is 2, and multiply each digit by the base raised to the power of the digit's place position. Hover to see an example
                                     <button type="button" class="btn btn-info" id="binnumbutton" data-toggle="popover" title="Binary to decimal" data-trigger="hover" html="true">here</button>.</p>
 
                                 <div id="binnum" style="display: none">
@@ -1742,31 +1745,28 @@ min-width: 100px;;
                     <div id="addtolistcontent" style="display: none">
                         <div>
                             <p>Using Javascript ...</p>
-                            <p>var nums = [1,2,3,4,5];<br>
-                                appendItem(nums, 6);<br>
-                                console.log(nums);<br>
+                            <p>var nums = [1,2,3,4,5];<br> appendItem(nums, 6);<br> console.log(nums);
+                                <br>
                             </p>
-                                <p>This results in [1,2,3,4,5,6]</p>
+                            <p>This results in [1,2,3,4,5,6]</p>
                         </div>
                     </div>
 
                     <div id="insertinlistcontent" style="display: none">
                         <div>
                             <p>Using Javascript ...</p>
-                            <p>var nums = [1,2,3,4,5];<br>
-                                insertItem(nums, 0, 999);<br>
-                                console.log(nums);<br></p>
-                                <p>This results in [999,1,2,3,4,5]</p>
+                            <p>var nums = [1,2,3,4,5];<br> insertItem(nums, 0, 999);<br> console.log(nums);
+                                <br></p>
+                            <p>This results in [999,1,2,3,4,5]</p>
                         </div>
                     </div>
 
                     <div id="removefromlistcontent" style="display: none">
                         <div>
                             <p>Using Javascript ...</p>
-                            <p>var nums = [1,2,3,4,5];<br>
-                                removeItem(nums, 1);<br>
-                                console.log(nums);<br></p>
-                                <p>This results in [999,2,3,4,5]</p>
+                            <p>var nums = [1,2,3,4,5];<br> removeItem(nums, 1);<br> console.log(nums);
+                                <br></p>
+                            <p>This results in [999,2,3,4,5]</p>
                         </div>
                     </div>
 
@@ -1777,8 +1777,7 @@ min-width: 100px;;
                             <p>Javascript for loop</p>
                             <p>
                                 for (var index = 0; index &lt; 10; index++) {<br></10>
-                                &nbsp;&nbsp;    console.log(index);<br>
-                                }
+                                &nbsp;&nbsp; console.log(index);<br> }
                             </p>
                         </div>
                     </div>
@@ -1786,10 +1785,8 @@ min-width: 100px;;
                         <div>
                             <p>Javascript while loop</p>
                             <p>
-                                var index = 0;<br>
-                                while (index &lt; 10) {<br></10>
-                                &nbsp;&nbsp;    index+= 1;<br>
-                                }
+                                var index = 0;<br> while (index &lt; 10) {<br></10>
+                                &nbsp;&nbsp; index+= 1;<br> }
                             </p>
                         </div>
                     </div>
@@ -1797,10 +1794,8 @@ min-width: 100px;;
                         <div>
                             <p>Javascript do ... while loop</p>
                             <p>
-                                var index = 0;<br>
-                                do {<br></10>
-                                &nbsp;&nbsp;    index+= 1;<br>
-                                } while (index &lt; 10);
+                                var index = 0;<br> do {<br></10>
+                                &nbsp;&nbsp; index+= 1;<br> } while (index &lt; 10);
                             </p>
                         </div>
                     </div>
@@ -1937,12 +1932,8 @@ min-width: 100px;;
 
                             </td>
                             <td><i class="material-icons custom">question_answer</i><br>
-                                <p>Lists are <i>data structures</i>,
-                                     things in software that help organize the data being worked on in a program. 
-                                    Lists store items sequentially (like ice cubes in an ice tray), 
-                                    and are key building blocks of 
-                                    software and data processing. Used right, lists 
-                                    are abstractions that help create good software.</p>
+                                <p>Lists are <i>data structures</i>, things in software that help organize the data being worked on in a program. Lists store items sequentially (like ice cubes in an ice tray), and are key building blocks of software and
+                                    data processing. Used right, lists are abstractions that help create good software.</p>
                             </td>
                         </tr>
 
@@ -1952,24 +1943,18 @@ min-width: 100px;;
                         <tr>
                             <td> <i class="material-icons custom">stars</i> What's a list'?<br>
                                 <i class="material-icons custom">stars</i> Why use a list?<br>
-                                <i class="material-icons custom">stars</i> How do you get an 
-                                item from a list?<br>
+                                <i class="material-icons custom">stars</i> How do you get an item from a list?<br>
                                 <i class="material-icons custom">stars</i> What's <i>zero-based</i>?<br>
                                 <i class="material-icons custom">stars</i> What's an empty list?<br>
                             </td>
                             <td><i class="material-icons custom">question_answer</i>
-                                <p>Lists are data structures, used to proccess data. Lists take the place of multiple variables 
-                                    and add flexibility to how you can work with data.
-The term <i>Array</i> is similar to list.
+                                <p>Lists are data structures, used to proccess data. Lists take the place of multiple variables and add flexibility to how you can work with data. The term <i>Array</i> is similar to list.
                                 </p>
                                 <p>In Javascript, lists are declared and initialized with</p>
                                 <p>
-                                    var myTasks = []; // An <i>empty list</i>, no elements<br>
-                                   var myItems = ["Purse", "Wallet", "Check book"];</p>
-                                   <p>You can use the index (starting with zero) position of the item in the list, to get the item.<br>
-                                var index = 0;<br>
-                                    var item = myItems[index];</p>
-<p>We say that lists are <i>zero-based</i> because the index or subscript starts at zero.</p>
+                                    var myTasks = []; // An <i>empty list</i>, no elements<br> var myItems = ["Purse", "Wallet", "Check book"];</p>
+                                <p>You can use the index (starting with zero) position of the item in the list, to get the item.<br> var index = 0;<br> var item = myItems[index];</p>
+                                <p>We say that lists are <i>zero-based</i> because the index or subscript starts at zero.</p>
                             </td>
                         </tr>
                         <tr>
@@ -1977,16 +1962,14 @@ The term <i>Array</i> is similar to list.
                         </tr>
                         <tr>
                             <td>
-                                <i class="material-icons custom">stars</i> 
-                                What's the first item in a list?<br>
-                                <i class="material-icons custom">stars</i> 
-                                What's the last item in a list?<br>
+                                <i class="material-icons custom">stars</i> What's the first item in a list?<br>
+                                <i class="material-icons custom">stars</i> What's the last item in a list?<br>
                             </td>
                             <td>
                                 <i class="material-icons custom">question_answer</i> <br>
                                 <p>The first item is at index 0.</p>
                                 <p>The last item should be obtained using a call to find the numer of elements in the list, and then subtract 1.</p>
-                              
+
                             </td>
                         </tr>
                         <tr>
@@ -1994,13 +1977,12 @@ The term <i>Array</i> is similar to list.
                         </tr>
                         <tr>
                             <td><i class="material-icons custom">stars</i> What's an out of bounds error?<br>
-                            
+
                             </td>
                             <td>
                                 <i class="material-icons custom">question_answer</i> <br>
-                                <p>An index out of bounds error happens when the index value is 
-                                    outside the range of the list content.</p>
-                              
+                                <p>An index out of bounds error happens when the index value is outside the range of the list content.</p>
+
                             </td>
                         </tr>
                         <tr>
@@ -2011,24 +1993,18 @@ The term <i>Array</i> is similar to list.
                             </td>
                             <td>
                                 <i class="material-icons custom">question_answer</i> <br>
-                                <p>Depending on the list data structure, items can be  
-                                    <button type="button" 
-                                    class="btn btn-info" id="addtolistbutton" data-toggle="popover" 
-                                    title="add to list" data-trigger="hover" html="true">
-                                    added</button> to the end, 
-                                    <button type="button" 
-                                    class="btn btn-info" id="insertinlistbutton" data-toggle="popover" 
-                                    title="insert in list" data-trigger="hover" html="true">
-                                    inserted</button> at an index, or 
-                                    <button type="button" 
-                                    class="btn btn-info" id="removefromlistbutton" data-toggle="popover" 
-                                    title="remove from list" data-trigger="hover" html="true">
+                                <p>Depending on the list data structure, items can be
+                                    <button type="button" class="btn btn-info" id="addtolistbutton" data-toggle="popover" title="add to list" data-trigger="hover" html="true">
+                                    added</button> to the end,
+                                    <button type="button" class="btn btn-info" id="insertinlistbutton" data-toggle="popover" title="insert in list" data-trigger="hover" html="true">
+                                    inserted</button> at an index, or
+                                    <button type="button" class="btn btn-info" id="removefromlistbutton" data-toggle="popover" title="remove from list" data-trigger="hover" html="true">
 
                                     removed</button> from the list.</p>
                                 <p>You can check the content of a list by printing the list.</p>
                             </td>
                         </tr>
-                  
+
 
                     </table>
 
@@ -2059,11 +2035,7 @@ The term <i>Array</i> is similar to list.
 
                             </td>
                             <td><i class="material-icons custom">question_answer</i><br>
-                                <p>Loops are programming structures that support 
-                                    executing the same lines of code repetitively, 
-                                    using a counter, instead of copying the lines over and over.
-                                    Used right, loops are abstractions that help to create 
-                                    good software.</p>
+                                <p>Loops are programming structures that support executing the same lines of code repetitively, using a counter, instead of copying the lines over and over. Used right, loops are abstractions that help to create good software.</p>
                             </td>
                         </tr>
 
@@ -2078,27 +2050,20 @@ The term <i>Array</i> is similar to list.
                             <td><i class="material-icons custom">question_answer</i>
                                 <p>Loops work by applying a given set of instructions over and over again.
                                 </p>
-                                <p>There are different types of loop, but all loops are similar 
-                                    in supporting re-execution of program code.</p>
+                                <p>There are different types of loop, but all loops are similar in supporting re-execution of program code.</p>
                                 <p>
-                                    In Javascript, loops take the form of <button type="button" 
-                                    class="btn btn-info" id="forloopbutton" data-toggle="popover" 
-                                    title="for loop" data-trigger="hover" html="true">
+                                    In Javascript, loops take the form of <button type="button" class="btn btn-info" id="forloopbutton" data-toggle="popover" title="for loop" data-trigger="hover" html="true">
 
-                                    for</button>, <button type="button" 
-                                    class="btn btn-info" id="whileloopbutton" data-toggle="popover" 
-                                    title="while loop" data-trigger="hover" html="true">
+                                    for</button>, <button type="button" class="btn btn-info" id="whileloopbutton" data-toggle="popover" title="while loop" data-trigger="hover" html="true">
 
-                                    while</button>, <button type="button" 
-                                    class="btn btn-info" id="dowhileloopbutton" data-toggle="popover" 
-                                    title="do .. while loop" data-trigger="hover" html="true">
+                                    while</button>, <button type="button" class="btn btn-info" id="dowhileloopbutton" data-toggle="popover" title="do .. while loop" data-trigger="hover" html="true">
 
                                     do ... while</button>. </p>
                             </td>
                         </tr>
                         <tr>
                             <td class="infocell" colspan="2">Components of a Loop</td>
-                            
+
                         </tr>
                         <tr>
                             <td>
@@ -2106,36 +2071,32 @@ The term <i>Array</i> is similar to list.
                                 <i class="material-icons custom">stars</i> What's a loop body?<br>
                             </td>
                             <td><i class="material-icons custom">question_answer</i>
-                            <p>A loop always has (a) loop condition, (b) loop body.</p>
-                        <p>The loop condition governs access to the loop, like executing as 
-                            long as <i>index</i> &lt; 10.</p> 
-                    <p>The loop body is the code that's executed each 
-                        time through the loop. In the body of the loop, <i>index</i>'s 
-                        value is changed!</p>   </td>
-                    </tr>
+                                <p>A loop always has (a) loop condition, (b) loop body.</p>
+                                <p>The loop condition governs access to the loop, like executing as long as <i>index</i> &lt; 10.</p>
+                                <p>The loop body is the code that's executed each time through the loop. In the body of the loop, <i>index</i>'s value is changed!</p>
+                            </td>
+                        </tr>
                         <tr>
                             <td class="infocell" colspan="2">Loop Variable</td>
-                            
+
                         </tr>
                         <tr>
                             <td><i class="material-icons custom">stars</i>
                                 <i class="material-icons custom">stars</i> What's a loop variable?<br></td>
-                            <td><i class="material-icons custom">question_answer</i>
-                            A <i>loop variable</i> controls access to the loop, and how many times it executes.
-                        Loop variable is also called <i>sentry variable, loop counter</i>. </td>
+                            <td><i class="material-icons custom">question_answer</i> A <i>loop variable</i> controls access to the loop, and how many times it executes. Loop variable is also called <i>sentry variable, loop counter</i>. </td>
                         </tr>
-                      
+
                         <tr>
                             <td class="infocell" colspan="2">Problems in programming loops</td>
                         </tr>
                         <tr>
                             <td><i class="material-icons custom">stars</i> What's an infinite loop?<br>
-                            
+
                             </td>
                             <td>
                                 <i class="material-icons custom">question_answer</i> <br>
                                 <p>An infinite loop results when the loop condition never changes.</p>
-                              
+
                             </td>
                         </tr>
                         <tr>
@@ -2144,7 +2105,7 @@ The term <i>Array</i> is similar to list.
                         <tr>
                             <td><i class="material-icons custom">stars</i> How are loops and lists used together?<br>
                                 <i class="material-icons custom">stars</i> How can out of bounds errors happen?<br>
-                               
+
                             </td>
                             <td>
                                 <i class="material-icons custom">question_answer</i> <br>
@@ -2153,8 +2114,8 @@ The term <i>Array</i> is similar to list.
                                 <p>An <i>out of bounds error</i> results if the loop variable is ever an invalid value for the list.</p>
                             </td>
                         </tr>
-                      
-                       
+
+
 
                     </table>
 
@@ -2175,7 +2136,7 @@ The term <i>Array</i> is similar to list.
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="dataLabel">Software, Loops </h5>
+                    <h5 class="modal-title" id="dataLabel">Algorithms </h5>
 
                 </div>
                 <div class="modal-body">
@@ -2195,35 +2156,194 @@ The term <i>Array</i> is similar to list.
                         </tr>
                         <tr>
                             <td> <i class="material-icons custom">stars</i> Is an algorithm the same as a problem?<br>
-                                
+
                             </td>
                             <td><i class="material-icons custom">question_answer</i>
-                                <p>A problem is a stement of an issue that may or may not be solvable by a computer.
-                                </p>
-                                <p>An algorithm is a finite set of instructions (not necessarily code) that accomplishes a task. .</p>
-                                
+                                <p>A problem is a statement of an issue that may or may not be solvable by a computer. An algorithm is a finite set of instructions (not necessarily code) that accomplishes a task. .</p>
+
                             </td>
                         </tr>
+
+
+
+
+                        <tr>
+                            <td class="infocell" colspan="2">Unreasonable Time Problems</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="material-icons custom">stars</i> What's a reasonable time problem?<br>
+
+                            </td>
+                            <td><i class="material-icons custom">question_answer</i>
+                                <p>A <button type="button" class="btn btn-info" id="reasonabletimeproblembutton" data-toggle="popover" title="reasonable time problem" data-trigger="hover" html="true">
+                                    <i>reasonable time problem</i></button> is one that can be solved in a number of steps described by any polynomial function of the input, like linear, square, cube.</p>
+                                <p>An
+                                    <button type="button" class="btn btn-info" id="unreasonabletimeproblembutton" data-toggle="popover" title="unreasonable time problem" data-trigger="hover" html="true">
+                                    <i>unreasonable time problem</i></button> requires a number of steps that is exponentially described in terms of the input.</p>
+
+                            </td>
+                        </tr>
+
+
+
                         <tr>
                             <td class="infocell" colspan="2">Heuristic Solutions</td>
-                            
+
                         </tr>
                         <tr>
                             <td>
                                 <i class="material-icons custom">stars</i> What's a heuristic?<br>
-                                <i class="material-icons custom">stars</i> What's a loop body?<br>
+                                <i class="material-icons custom">stars</i> When would heuristics be used?<br>
                             </td>
                             <td><i class="material-icons custom">question_answer</i>
-                            <p></p>
-                        <p></p>   </td>
-                    </tr>
-                       
-                      
-                       
-                        
-                      
-                       
+                                <p>A <button type="button" class="btn btn-info" id="heuristicexamplebutton" data-toggle="popover" title="heuristic solution" data-trigger="hover" html="true">
+                                    <i>heuristic</i></button> is a plan, maybe not the best one, that achieves a good enough solution. </p>
+                                <p>Heuristic solutions are used when an exact solution would take too long to develop, or too long to work - like an unreasonable time problem.</p>
+                            </td>
+                        </tr>
 
+                        <tr>
+                            <td class="infocell" colspan="2">Transferring Algorithms to Code</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="material-icons custom">stars</i> What's sequencing?<br>
+                                <i class="material-icons custom">stars</i> What's selection?<br>
+                                <i class="material-icons custom">stars</i> What's iteration?<br>
+                            </td>
+                            <td><i class="material-icons custom">question_answer</i>
+                                <p><button type="button" class="btn btn-info" id="sequencingbutton" data-toggle="popover" title="Sequencing" data-trigger="hover" html="true">
+                                    <i>Sequencing</i></button> refers to how instructions are listed in a program. </p>
+                                <p> <button type="button" class="btn btn-info" id="selectionbutton" data-toggle="popover" title="Selection" data-trigger="hover" html="true">
+                                    <i>Selection</i></button> is about using conditionals to make a decision.</p>
+                                <p> <button type="button" class="btn btn-info" id="iterationbutton" data-toggle="popover" title="Iteration" data-trigger="hover" html="true">
+                                    <i>Iteration</i></button> describes repeating code, or using loops in coding.</p>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="infocell" colspan="2">Important Search Algorithms</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="material-icons custom">stars</i> What's linear search?<br>
+                                <i class="material-icons custom">stars</i> What's binary search?<br>
+                                <i class="material-icons custom">stars</i> Is binary search better?<br>
+                            </td>
+                            <td><i class="material-icons custom">question_answer</i>
+                                <p>
+                                    <a href="https://jacquikane.github.io/Algorithms4CS/alglinearsearch/index.html"><i>Linear Search</i></a> is a search algorithm that traverses a list sequentially, comparing each value with a target, until the target
+                                    is found. </p>
+                                <p> <a href="https://jacquikane.github.io/Algorithms4CS/algbinsearch/index.html"><i>Binary Search</i>
+                                </a> is a search algorithm that requires a sorted list. Comparisons are done at mid-points in the list and sub-lists. See how binary search works.</p>
+
+
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="infocell" colspan="2">Turing's Undecidable Problem</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="material-icons custom">stars</i> What makes a problem undecidable?<br>
+                                <i class="material-icons custom">stars</i> What makes a problem decidable?<br>
+                                <i class="material-icons custom">stars</i> Examples?<br>
+                            </td>
+                            <td><i class="material-icons custom">question_answer</i>
+                                <p>Alan Turing proved that some problems cannot give a predictable response. To show this, he used proof by contradiction and the
+                                    <button type="button" class="btn btn-info" id="haltingbutton" data-toggle="popover" title="halting problem" data-trigger="hover" html="true">
+                                        <i>Halting problem</i></button> . </p>
+                                <p>An <button type="button" class="btn btn-info" id="undecidablebutton" data-toggle="popover" title="undecidable problem" data-trigger="hover" html="true">
+                                        <i>undecidable problem</i></button> is a problem that cannot be reliably solved with any algorithm.</p>
+                                <p>A problem is <button type="button" class="btn btn-info" id="decidablebutton" data-toggle="popover" title="decidable problem" data-trigger="hover" html="true">
+                                        <i>decidable problem</i></button> if an algorithm can be created to solve it, like
+                                    <i>is an element in a list</i> - we can solve this using binary search or linear search.</p>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="infocell" colspan="2"></td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="material-icons custom">stars</i> What makes a problem undecidable?<br>
+                                <i class="material-icons custom">stars</i> What makes a problem decidable?<br>
+                                <i class="material-icons custom">stars</i> Examples?<br>
+                            </td>
+                            <td><i class="material-icons custom">question_answer</i>
+                                <p>Alan Turing proved that some problems cannot give a predictable response. To show this, he used proof by contradiction and the
+                                    <button type="button" class="btn btn-info" id="haltingbutton" data-toggle="popover" title="halting problem" data-trigger="hover" html="true">
+                                        <i>Halting problem</i></button> . </p>
+                                <p>An <button type="button" class="btn btn-info" id="undecidablebutton" data-toggle="popover" title="undecidable problem" data-trigger="hover" html="true">
+                                        <i>undecidable problem</i></button> is a problem that cannot be reliably solved with any algorithm.</p>
+                                <p>A problem is <button type="button" class="btn btn-info" id="decidablebutton" data-toggle="popover" title="decidable problem" data-trigger="hover" html="true">
+                                        <i>decidable problem</i></button> if an algorithm can be created to solve it, like
+                                    <i>is an element in a list</i> - we can solve this using binary search or linear search.</p>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <i class="material-icons custom">stars</i> What makes a problem undecidable?<br>
+                                <i class="material-icons custom">stars</i> What makes a problem decidable?<br>
+                                <i class="material-icons custom">stars</i> Examples?<br>
+                            </td>
+                            <td><i class="material-icons custom">question_answer</i>
+                                <p>Alan Turing proved that some problems cannot give a predictable response. To show this, he used proof by contradiction and the
+                                    <button type="button" class="btn btn-info" id="haltingbutton" data-toggle="popover" title="halting problem" data-trigger="hover" html="true">
+                                        <i>Halting problem</i></button> . </p>
+                                <p>An <button type="button" class="btn btn-info" id="undecidablebutton" data-toggle="popover" title="undecidable problem" data-trigger="hover" html="true">
+                                        <i>undecidable problem</i></button> is a problem that cannot be reliably solved with any algorithm.</p>
+                                <p>A problem is <button type="button" class="btn btn-info" id="decidablebutton" data-toggle="popover" title="decidable problem" data-trigger="hover" html="true">
+                                        <i>decidable problem</i></button> if an algorithm can be created to solve it, like
+                                    <i>is an element in a list</i> - we can solve this using binary search or linear search.</p>
+
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="infocell" colspan="2">Computing Norms</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="material-icons custom">stars</i> What's Sequential Processing?<br>
+                                <i class="material-icons custom">stars</i> Parallel computing??<br>
+                                <i class="material-icons custom">stars</i> Distributed computing?<br>
+                            </td>
+                            <td><i class="material-icons custom">question_answer</i>
+                                <p>Sequential computing has it'sprocesses run step after step. </p>
+                                <p>Parallel computing has processes running simultaneously.</p>
+                                <p>Distributed computing is a strategy in which prcesses run on multiple devices simultaneously.</p>
+                                <p>Speedup is a quotient, the time taken to compute sequantially, divided by the tme it takes to compute the same thing using parallel or distributed processing.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="infocell" colspan="2">Synchronous operations</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="material-icons custom">stars</i> What does it mean to be synchronous?<br>
+                                <i class="material-icons custom">stars</i> What's asynchronous?<br>
+
+                            </td>
+                            <td><i class="material-icons custom">question_answer</i>
+                                <p><i>Synchronous</i> means using the same clock! If a task is handled synchronously, then the prcess waits for the task to return before continuing. </p>
+                                <p>Asynchronous processing means that tasks can work independently of each other,without consideration of timing.</p>
+                            </td>
+                        </tr>
                     </table>
 
 
@@ -2234,6 +2354,77 @@ The term <i>Array</i> is similar to list.
                 </div>
             </div>
         </div>
+
+
+        <!-- Popover Content for programming algorithms -->
+
+        <!--  content of popover  -->
+        <div id="reasonabletimeproblemcontent" style="display: none">
+            <div>
+                <p>Reasonable time algorithms include those with efficiencies (steps involved) represented by a polynomial, like 2<sup>n</sup>, ... 7<sup>n</sup>.</p>
+                <p>steps(n) = 3xn<sup>2</sup> + 4n - 1</p>
+            </div>
+        </div>
+        <div id="unreasonabletimeproblemcontent" style="display: none">
+            <div>
+                <p>Unreasonable time algorithms have efficiencies that are exponential, as n increases the number of steps becomes, well... unreasonable.</p>
+                <p>steps(n) = 3<sup>n</sup>+ 22</p>
+                <p>The travelling salesman problem, in which a salesman takes the shortest possible route that visits each city exactly once and returns to an origin city, is an unreasonable time problem.</p>
+            </div>
+        </div>
+        <div id="heuristicexamplecontent" style="display: none">
+            <div>
+                <p>The government put Covid restrictions in place as a heuristic. The optimal solution might be to test every citizen every few days, but this is an unreasonable time problem. </p>
+            </div>
+        </div>
+        <div id="sequencingcontent" style="display: none">
+            <div>
+                <p>Sequencing describes the ordering of program commands, like </p>
+                <p>var x = 1;<br> y = 2*x;<br> z =x + y;</p>
+            </div>
+        </div>
+        <div id="selectioncontent" style="display: none">
+            <div>
+                <p>Selection is about making decisions with conditionals </p>
+                <p>if ( score &gt; 10) {<br> &nbsp;&nbsp;console.log("You won!");<br> }
+                </p>
+            </div>
+        </div>
+        <div id="iterationcontent" style="display: none">
+            <div>
+                <p>Iteration is repaeting instructions, or looping. </p>
+                <p>while ( score &lt;= 10) {<br> &nbsp;&nbsp;playTurn();<br> &nbsp;&nbsp;...
+                    <br> }
+                </p>
+            </div>
+        </div>
+        <div id="haltingcontent" style="display: none">
+            <div>
+                <p>This problem was used as an example of an undecidable problem in 1936, by Alan Turing.
+                </p>
+                <p>The problem asks if an algorithm can be created that tells if a program will halt, given the program and an input to it. No such general algorithm exists for any given program. </p>
+            </div>
+        </div>
+        <div id="decidablecontent" style="display: none">
+            <div>
+                <p>A decidable problem might be one that asks to compute all the even numbers between 1 and 100, or all the prime numbers betwee 1 and 200,000.
+                </p>
+            </div>
+        </div>
+        <div id="undecidablecontent" style="display: none">
+            <div>
+                <p>An undecidable problem might be to compute all the prime numbers, or to figure out if a program always stops (halting problem).
+                </p>
+            </div>
+        </div>
+        <!-- end content of popovers for programming algorithms -->
+
+
+
+
+
+
+
     </div>
 
 
@@ -2349,7 +2540,7 @@ The term <i>Array</i> is similar to list.
             });
         });
     </script>
-     <script>
+    <script>
         $(document).ready(function() {
             $('#insertinlistbutton').popover({
                 html: true,
@@ -2359,7 +2550,7 @@ The term <i>Array</i> is similar to list.
             });
         });
     </script>
-     <script>
+    <script>
         $(document).ready(function() {
             $('#removefromlistbutton').popover({
                 html: true,
@@ -2369,7 +2560,7 @@ The term <i>Array</i> is similar to list.
             });
         });
     </script>
-     <script>
+    <script>
         $(document).ready(function() {
             $('#forloopbutton').popover({
                 html: true,
@@ -2379,32 +2570,122 @@ The term <i>Array</i> is similar to list.
             });
         });
     </script>
-         <script>
-            $(document).ready(function() {
-                $('#forloopbutton').popover({
-                    html: true,
-                    content: function() {
-                        return $('#forloopcontent').html();
-                    }
-                });
+    <script>
+        $(document).ready(function() {
+            $('#forloopbutton').popover({
+                html: true,
+                content: function() {
+                    return $('#forloopcontent').html();
+                }
             });
-        </script>
-         <script>
-            $(document).ready(function() {
-                $('#whileloopbutton').popover({
-                    html: true,
-                    content: function() {
-                        return $('#whileloopcontent').html();
-                    }
-                });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#whileloopbutton').popover({
+                html: true,
+                content: function() {
+                    return $('#whileloopcontent').html();
+                }
             });
-        </script>
+        });
+    </script>
     <script>
         $(document).ready(function() {
             $('#dowhileloopbutton').popover({
                 html: true,
                 content: function() {
                     return $('#dowhileloopcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#reasonabletimeproblembutton').popover({
+                html: true,
+                content: function() {
+                    return $('#reasonabletimeproblemcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#unreasonabletimeproblembutton').popover({
+                html: true,
+                content: function() {
+                    return $('#unreasonabletimeproblemcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#heuristicexamplebutton').popover({
+                html: true,
+                content: function() {
+                    return $('#heuristicexamplecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#sequencingbutton').popover({
+                html: true,
+                content: function() {
+                    return $('#sequencingcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#selectionbutton').popover({
+                html: true,
+                content: function() {
+                    return $('#selectioncontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#iterationbutton').popover({
+                html: true,
+                content: function() {
+                    return $('#iterationcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#haltingbutton').popover({
+                html: true,
+                content: function() {
+                    return $('#haltingcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#decidablebutton').popover({
+                html: true,
+                content: function() {
+                    return $('#decidablecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#undecidablebutton').popover({
+                html: true,
+                content: function() {
+                    return $('#undecidablecontent').html();
                 }
             });
         });
