@@ -976,6 +976,21 @@
                 </div>
             </section>
 
+            <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                <a data-toggle="modal" data-target="#programmingapis" data-highres="api.png" href="#">
+                    <img src=".\images\api.png" alt="unit1" style="width:100%">
+                </a>
+
+
+
+
+
+                <div class="container">
+                    <h4><b>Coding</b></h4>
+                    <p>APIs</p>
+                </div>
+            </section>
+
 
             <section class="contentBordered mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
                 <a data-toggle="modal" data-target="#programming" data-highres="bigdata.png" href="#">
@@ -1881,7 +1896,9 @@
                                 <p>variables store information temporarily in programs.</p>
                                 <p>Conditionals or if statements help to take a specific action based on checking a condition in the code.</p>
                                 <p>A function is a block of code, given a name and invoked by that name. Functions are useful when lines of code are repeated throughout a program. You can save lines of code by creating a function and calling it when needed.
-                                    Functions make code more maintainable and easier to change, because a change only has to be made locally, inside the function.</p>
+                                    Functions make code more maintainable and easier to change, 
+                                    because a change only has to be made locally, inside the function.</p>
+                                    <p>Functions receive data via parameters, values passed into the function by the caller</p>
                             </td>
                         </tr>
                         <tr>
@@ -2426,6 +2443,130 @@
 
 
     </div>
+
+    <!-- Modal 10 PROGRAMMINGAPIS -->
+    <div class="modal fade" id="programmingapis" tabindex="-1" role="dialog" aria-labelledby="more programming" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dataLabel">APIs </h5>
+
+                </div>
+                <div class="modal-body">
+
+                    <table>
+                        <tr>
+                            <td><span class="quote">Silos can't interoperate unless the technology does
+                                 - Carly Fiorino</span><br><br>
+
+                            </td>
+                            <td><i class="material-icons custom">question_answer</i><br>
+                                <p>An API, or Applications Programming Interface, is a library 
+                                    or collection of 
+                                    pre-written code that can be accessed and used in a program. </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="infocell" colspan="2">Common APIs</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="material-icons custom">stars</i>what do APIs do?<br>
+                                <i class="material-icons custom">stars</i>API advantages?<br>
+                            </td>
+                            <td><i class="material-icons custom">question_answer</i>
+                                <p>APIs save the programmer time and expertize needed to complete a part of an 
+                                    application, like the use of Google maps api for providing directions to a business. 
+                                   </p>
+                                   <p>The code in an API has been verified to work, the programmer has to comply 
+                                       with the API instructions in using the API calls.</p>
+
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+
+                </div>
+                <div class="modal-footer ">
+                    <p>Click outside the box to close</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Popover Content for programming apis -->
+
+        <!--  content of popover  -->
+        <div id="reasonabletimeproblemcontent" style="display: none">
+            <div>
+                <p>Reasonable time algorithms include those with efficiencies (steps involved) represented by a polynomial, like 2<sup>n</sup>, ... 7<sup>n</sup>.</p>
+                <p>steps(n) = 3xn<sup>2</sup> + 4n - 1</p>
+            </div>
+        </div>
+        <div id="unreasonabletimeproblemcontent" style="display: none">
+            <div>
+                <p>Unreasonable time algorithms have efficiencies that are exponential, as n increases the number of steps becomes, well... unreasonable.</p>
+                <p>steps(n) = 3<sup>n</sup>+ 22</p>
+                <p>The travelling salesman problem, in which a salesman takes the shortest possible route that visits each city exactly once and returns to an origin city, is an unreasonable time problem.</p>
+            </div>
+        </div>
+        <div id="heuristicexamplecontent" style="display: none">
+            <div>
+                <p>The government put Covid restrictions in place as a heuristic. The optimal solution might be to test every citizen every few days, but this is an unreasonable time problem. </p>
+            </div>
+        </div>
+        <div id="sequencingcontent" style="display: none">
+            <div>
+                <p>Sequencing describes the ordering of program commands, like </p>
+                <p>var x = 1;<br> y = 2*x;<br> z =x + y;</p>
+            </div>
+        </div>
+        <div id="selectioncontent" style="display: none">
+            <div>
+                <p>Selection is about making decisions with conditionals </p>
+                <p>if ( score &gt; 10) {<br> &nbsp;&nbsp;console.log("You won!");<br> }
+                </p>
+            </div>
+        </div>
+        <div id="iterationcontent" style="display: none">
+            <div>
+                <p>Iteration is repaeting instructions, or looping. </p>
+                <p>while ( score &lt;= 10) {<br> &nbsp;&nbsp;playTurn();<br> &nbsp;&nbsp;...
+                    <br> }
+                </p>
+            </div>
+        </div>
+        <div id="haltingcontent" style="display: none">
+            <div>
+                <p>This problem was used as an example of an undecidable problem in 1936, by Alan Turing.
+                </p>
+                <p>The problem asks if an algorithm can be created that tells if a program will halt, given the program and an input to it. No such general algorithm exists for any given program. </p>
+            </div>
+        </div>
+        <div id="decidablecontent" style="display: none">
+            <div>
+                <p>A decidable problem might be one that asks to compute all the even numbers between 1 and 100, or all the prime numbers betwee 1 and 200,000.
+                </p>
+            </div>
+        </div>
+        <div id="undecidablecontent" style="display: none">
+            <div>
+                <p>An undecidable problem might be to compute all the prime numbers, or to figure out if a program always stops (halting problem).
+                </p>
+            </div>
+        </div>
+        <!-- end content of popovers for programming apis -->
+
+
+
+
+
+
+
+    </div>
+
 
 
     <!-- Scripts -->
